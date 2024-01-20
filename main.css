@@ -108,15 +108,24 @@ form input:hover {
   height: 1.5rem;
 }
 
+thead {
+  background-color: #3777e68c;
+}
+
 /* Estilos do corpo da tabela */
 tbody {
   font-size: 1.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #43c0fa42;
 }
 
 /* Estilos do rodapé da tabela */
 tfoot {
   background-color: #000000;
   color: #fff;
+  font-weight: bold;
 }
 
 /* Estilos do rodapé */
