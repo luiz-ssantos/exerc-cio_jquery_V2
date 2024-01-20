@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+
+    <!-- Título da página -->
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Minha Lista de Tarefas</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section id="divAddTarefa">
+        <!-- Formulário de adição de tarefa -->
+        <form action="">
+          <label for="addTarefa">NOVA TAREFA</label>
+          <br />
+          <input
+            type="text"
+            name="addTarefa"
+            id="addTarefa"
+            placeholder="Sua nova Tarefa..."
+          />
+          <br />
+          <button type="submit" id="butapCadastrar">Cadastrar</button>
+        </form>
+
+        <!-- Lista de tarefas -->
+        <div id="listaTarefas">
+          <table>
+            <!-- Cabeçalho da tabela -->
+            <thead>
+              <tr>
+                <th>TAREFA</th>
+                <th>CONCLUIDA</th>
+                <th>APAGAR</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <!-- Rodapé da tabela com estatísticas -->
+            <tfoot>
+              <tr>
+                <td>
+                  <p>Total de tarefas: <span id="totalTarefas">0</span>.</p>
+                </td>
+                <td>
+                  <p>Não realizadas: <span id="naoRealizadas">0</span>.</p>
+                </td>
+                <td>
+                  <p>Realizadas: <span id="realizadas">0</span>.</p>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy;Luiz Henrique</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

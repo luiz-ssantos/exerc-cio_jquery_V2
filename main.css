@@ -1,0 +1,146 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do corpo da página */
+body {
+  background-color: #f2e6ce;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos da seção principal */
+main {
+  flex: 1;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #3777e6;
+  color: #f2e6ce;
+  padding: 2rem;
+  box-shadow: 0.1rem 1rem 1rem #00000079;
+  margin-bottom: 2rem;
+}
+
+/* Estilos do título no cabeçalho */
+header h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos da seção de adição de tarefa */
+main #divAddTarefa {
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  background-color: #91d9d9;
+  max-width: 60rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem;
+}
+
+/* Estilos do rótulo no formulário */
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilos do campo de entrada no formulário */
+form input {
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  padding: 0.3rem;
+  border: 0.18rem solid #fff;
+}
+
+/* Estilos do campo de entrada no formulário ao passar o mouse */
+form input:hover {
+  border: 0.18rem solid #f2d649;
+}
+
+/* Estilos do botão de cadastrar */
+#butapCadastrar {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 10rem;
+}
+
+/* Estilos do botão de cadastrar ao passar o mouse */
+#butapCadastrar:hover {
+  font-weight: bold;
+}
+
+/* Estilos da tabela de tarefas */
+#listaTarefas table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffff5;
+}
+
+/* Estilos da primeira coluna na tabela de tarefas */
+#listaTarefas th:first-child,
+#listaTarefas td:first-child {
+  width: 70%;
+}
+
+/* Estilos das células na tabela de tarefas */
+#listaTarefas th,
+#listaTarefas td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Estilos das imagens nas células da tabela de tarefas */
+#listaTarefas td img {
+  height: 1.5rem;
+}
+
+/* Estilos do corpo da tabela */
+tbody {
+  font-size: 1.2rem;
+}
+
+/* Estilos do rodapé da tabela */
+tfoot {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Estilos do rodapé */
+footer p {
+  line-height: 1rem;
+}
+
+/* Estilos do texto de tarefa concluída */
+.concluida {
+  font-weight: bold;
+  color: green;
+  text-decoration: line-through;
+}
+
+/* Estilos do rodapé fixo */
+footer {
+  background-color: #3777e6;
+  color: #f2e6ce;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
+}
